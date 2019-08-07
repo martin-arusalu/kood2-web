@@ -9,7 +9,7 @@ window.addEventListener("load", function(){
   node.innerHTML = html;
   let letters = document.querySelectorAll(".headline-subtitle span");
   let counter = 0;
-  Particles.init({ selector: '.background', color: '#15e2e0', connectParticles: true, speed: 0.2, maxParticles: 30, minDistance: 300 });
+  particlesJS.load('particles-js', 'particles.json');
 
   const t = setInterval(() => {
     if (counter < letters.length) {
