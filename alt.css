@@ -47,7 +47,7 @@
       animation-timing-function: cubic-bezier(.3,0,1,0);
       animation-fill-mode: forwards;
       z-index: 1;
-      height: 90vh;
+      height: 80vh;
     }
     #loading-gif {
       width: 60px;
