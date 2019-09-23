@@ -4,7 +4,7 @@
     background-color: #292929;
     transition: background-color 7s;
   }
-  
+
   html, body {
     margin: 0;
     padding: 0;
@@ -82,7 +82,7 @@
     }
 
     .kkk p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       line-height: 2rem;
     }
 
@@ -156,6 +156,7 @@
 
     h2 {
       margin: 1em;
+      margin-left: 0;
       font-size: 2em;
     }
 
@@ -164,5 +165,45 @@
     }
 
     p {
-      margin-left: 3em;
+      /* margin-left: 3em; */
     }
+
+/* FAQ */
+
+.accordion {
+  background-color: #292929;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.accordion:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out 0s;
+  z-index: 100;
+  visibility: visible;
+  width: 100%;
+}
+
+.active, .accordion:hover {
+  color: #15e2e0;
+}
+
+.panel {
+  padding: 0 18px;
+  color: #fff;
+  display: none;
+  overflow: hidden;
+}
