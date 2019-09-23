@@ -25,12 +25,24 @@
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
-    animation-name: fadeIn;
-    animation-duration: 3s;
-    animation-timing-function: cubic-bezier(.3,0,1,0);
-    animation-fill-mode: forwards;
+    animation-name: blurInOut;
+    animation-iteration-count:infinite;
+    animation-duration: 10s;
   }
+
+  @keyframes blurInOut {
+      0%   { filter: blur(3px); }
+      10%  { filter: blur(2px); }
+      20%  { filter: blur(0px); }
+      30%  { filter: blur(0px); }
+      40%  { filter: blur(1px); }
+      50%  { filter: blur(0px); }
+      60%  { filter: blur(0px); }
+      70%  { filter: blur(2px); }
+      80%  { filter: blur(0px); }
+      90% { filter: blur(0px); }
+      100% { filter: blur(3px); }
+    }
   body {
     padding: 1%;
     font-family: 'Muli', sans-serif;
@@ -100,8 +112,13 @@
       animation: animateLetter .6s ease-out forwards;
     }
     @keyframes animateLetter {
+      from {
+        opacity: 0;
+        filter: blur(10px);
+      }
       to {
         opacity: 1;
+        filter: blur(0px);
       }
     }
 

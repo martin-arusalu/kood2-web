@@ -5,8 +5,8 @@ window.addEventListener("load", function(){
     let l = Math.floor(Math.random() * (40 - 10)) + 10;
     document.body.parentNode.style.backgroundColor = 'hsl('+hue+', '+s+'%, '+l+'%)';
   }
-  changeBackground();
-  setInterval(changeBackground, 7000);
+  // changeBackground();
+  // setInterval(changeBackground, 7000);
 
   const [node] = document.querySelectorAll(".headline-subtitle");
   let html = "";
