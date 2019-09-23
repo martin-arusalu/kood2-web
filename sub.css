@@ -181,20 +181,9 @@
   transition: 0.4s;
   font-size: 1.4rem;
   font-weight: 500;
-}
-
-.accordion:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  transition: all 0.2s ease-in-out 0s;
-  z-index: 100;
-  visibility: visible;
-  width: 100%;
+  border-bottom: 2px solid #fff;
+  display: block;
+  width: 50%;
 }
 
 .active, .accordion:hover {
