@@ -11,6 +11,19 @@ window.addEventListener("load", function () {
   let counter = 0;
   particlesJS.load('particles-js', 'particles.json');
 
+  let count = 0;
+  const offers = [
+    'nutikaid äppe',
+    'stiilseid veebipoode',
+    'personaalseid tarkvaralahendusi',
+    'kodulehtede haldust',
+    'pilkupüüdvaid veebilehti'
+  ]
+  const s = setInterval(() => {
+    document.getElementById('switchable').innerHTML = offers[count % 5];
+    count++
+  }, 4000);
+
   const t = setInterval(() => {
     if (counter < letters.length) {
       let searching = true;
@@ -26,22 +39,4 @@ window.addEventListener("load", function () {
       clearInterval(t);
     }
   }, 30);
-
-
-  // const parallaxEls = document.querySelectorAll("[data-speed]");
-  // window.addEventListener("scroll", scrollHandler);
-
-  // function scrollHandler() {
-  //   for (const parallaxEl of parallaxEls) {
-  //     const direction = parallaxEl.dataset.direction == "up" ? "-" : "";
-  //     const transformY = this.pageYOffset * parallaxEl.dataset.speed;
-  //     if (parallaxEl.classList.contains("banner-title")) {
-  //       parallaxEl.style.transform = `translate3d(0,${direction}${transformY}px,0) rotate(-6deg)`;
-  //     } else if (parallaxEl.classList.contains("banner-subtitle")) {
-  //       parallaxEl.style.transform = `translate3d(0,${direction}${transformY}px,0) rotate(-3deg)`;
-  //     } else {
-  //       parallaxEl.style.transform = `translate3d(0,${direction}${transformY}px,0)`;
-  //     }
-  //   }
-  // }
 });
