@@ -155,17 +155,26 @@
     }
 
     h2 {
+      font-weight: 100;
       margin: 1em;
       margin-left: 0;
-      font-size: 2em;
+      font-size: 2.8em;
+      color: #15e2e0;
+      animation: .5s ease-in-out fadeIn forwards;
     }
 
     h3 {
-      margin-left: 2em;
+      font-weight: 400;
+      margin: 0 0 0 2em;
+      animation: .8s ease-in-out fadeIn forwards;
     }
 
-    p {
-      /* margin-left: 3em; */
+    h3:after {
+      content: url(./down-chevron.svg);
+      width: .8em;
+      display: inline-block;
+      padding-left: 10px;
+      transition: .5s;
     }
 
 /* FAQ */
@@ -174,20 +183,19 @@
   background-color: #292929;
   color: #fff;
   cursor: pointer;
-  padding: 18px;
+  padding: 12px;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
-  font-size: 1.4rem;
-  font-weight: 500;
-  border-bottom: 2px solid #fff;
-  display: block;
-  width: 50%;
 }
 
 .active, .accordion:hover {
   color: #15e2e0;
+}
+
+.active h3:after {
+  opacity: 0;
 }
 
 .panel {
