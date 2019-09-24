@@ -1,206 +1,153 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,800,900&display=swap&subset=latin-ext');
-
-  html {
-    background-color: #292929;
-    transition: background-color 7s;
-  }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    padding: 1%;
-    font-family: 'Muli', sans-serif;
-    color: #fff;
-  }
-
-    .content {
-      padding: 2% 7% 2% 7%;
-      margin: 0;
-      opacity: 0;
-      animation-name: fadeIn;
-      animation-duration: .1s;
-      animation-timing-function: cubic-bezier(.3,0,1,0);
-      animation-fill-mode: forwards;
-      z-index: 1;
-      height: 90vh;
-    }
-    .headline {
-      margin-top: 200px;
-      font-size: 72px;
-      font-weight: 900;
-      max-width: 70rem;
-      margin-block-end: 8px;
-      margin-bottom: 8px;
-      color: #fff;
-    }
-    .headline-subtitle {
-      font-size: 24px;
-      margin-block-end: 16px;
-      margin-bottom: 16px;
-      font-weight: 400;
-      color: #fff;
-    }
-    @keyframes fadeOut {
-      0%   { opacity: 1 }
-      100% { opacity: 0 }
-    }
-    @keyframes fadeIn {
-      0%   { opacity: 0 }
-      100% { opacity: 1 }
-    }
-
-    .headline-subtitle span {
-      position: relative;
-      opacity: 0;
-    }
-
-    .show-letter {
-      animation: animateLetter .6s ease-out forwards;
-    }
-    @keyframes animateLetter {
-      to {
-        opacity: 1;
-      }
-    }
-
-    h1 span {
-      position: relative;
-      display: block;
-      margin: 0;
-      line-height: 1;
-      transform: translateY(20rem);
-      z-index: 1;
-    }
-
-    .kkk {
-      overflow: hidden;
-      max-width: 50rem;
-      padding: 2%;
-    }
-
-    .kkk p {
-      font-size: 1.1rem;
-      line-height: 2rem;
-    }
-
-    .first-pop {
-      transform: translateY(20rem);
-      animation: up .8s ease-in-out forwards;
-    }
-
-    .second-pop {
-      transform: translateY(20rem);
-      animation: up .8s .5s ease-in-out forwards;
-    }
-
-    .third-pop {
-      transform: translateY(20rem);
-      animation: up .8s 1s ease-in-out forwards;
-    }
-
-    .title-container {
-      font-size: 0;
-      position: relative;
-      overflow: hidden;
-      padding-bottom: 0.4rem;
-    }
-
-    @keyframes up {
-      100% {
-          transform: translateY(0);
-      }
-    }
-
-    .menu-container {
-      display: flex;
-      justify-content: space-between;
-      z-index: 1;
-    }
-
-    .right-menu a {
-      text-decoration: none;
-      color: #fff;
-      padding: 10px;
-      font-size: 18px;
-      font-weight: 600;
-      z-index: 1;
-    }
-
-    .right-menu a {
-      position: relative;
-      color: #fff;
-      text-decoration: none;
-      z-index: 1;
-    }
-
-    .right-menu a:before {
-      content: "";
-      position: absolute;
-      width: 0%;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: #fff;
-      transition: all 0.2s ease-in-out 0s;
-      z-index: 1;
-    }
-
-    .right-menu a:hover:before {
-      visibility: visible;
-      width: 100%;
-      z-index: 1;
-    }
-
-    h2 {
-      font-weight: 100;
-      margin: 1em;
-      margin-left: 0;
-      font-size: 2.8em;
-      color: #15e2e0;
-      animation: .5s ease-in-out fadeIn forwards;
-    }
-
-    h3 {
-      font-weight: 400;
-      margin: 0 0 0 2em;
-      animation: .8s ease-in-out fadeIn forwards;
-    }
-
-    h3:after {
-      content: url(./down-chevron.svg);
-      width: .8em;
-      display: inline-block;
-      padding-left: 10px;
-      transition: .5s;
-    }
-
-/* FAQ */
-
-.accordion {
-  background-color: #292929;
-  color: #fff;
-  cursor: pointer;
-  padding: 12px;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
+ html {
+     background-color: #292929;
+     transition: background-color 7s;
 }
-
-.active, .accordion:hover {
-  color: #15e2e0;
+ html, body {
+     margin: 0;
+     padding: 0;
 }
-
-.active h3:after {
-  opacity: 0;
+ body {
+     padding: 1%;
+     font-family: 'Muli', sans-serif;
+     color: #fff;
 }
-
-.panel {
-  padding: 0 18px;
-  color: #fff;
-  display: none;
-  overflow: hidden;
+ .content {
+     padding: 2% 7% 2% 7%;
+     margin: 0;
+     opacity: 0;
+     animation-name: fadeIn;
+     animation-duration: .1s;
+     animation-timing-function: cubic-bezier(.3,0,1,0);
+     animation-fill-mode: forwards;
+     z-index: 1;
+     height: 90vh;
+}
+ .headline {
+     margin-top: 200px;
+     font-size: 72px;
+     font-weight: 900;
+     max-width: 70rem;
+     margin-block-end: 8px;
+     margin-bottom: 8px;
+     color: #fff;
+}
+ .headline-subtitle {
+     font-size: 24px;
+     margin-block-end: 16px;
+     margin-bottom: 16px;
+     font-weight: 400;
+     color: #fff;
+}
+ @keyframes fadeIn {
+     0% { opacity: 0 }
+     100% { opacity: 1 }
+}
+ .headline-subtitle span {
+     position: relative;
+     opacity: 0;
+}
+ h1 span {
+     position: relative;
+     display: block;
+     margin: 0;
+     line-height: 1;
+     transform: translateY(20rem);
+     z-index: 1;
+}
+ .kkk {
+     overflow: hidden;
+     max-width: 50rem;
+     padding: 2%;
+}
+ .kkk p {
+     font-size: 1.1rem;
+     line-height: 2rem;
+}
+ .first-pop {
+     transform: translateY(20rem);
+     animation: up .8s ease-in-out forwards;
+}
+ .title-container {
+     font-size: 0;
+     position: relative;
+     overflow: hidden;
+     padding-bottom: 0.4rem;
+}
+ @keyframes up {
+     100% {
+         transform: translateY(0);
+    }
+}
+ .menu-container {
+     display: flex;
+     justify-content: space-between;
+     z-index: 1;
+}
+ .right-menu a {
+     text-decoration: none;
+     color: #fff;
+     padding: 10px;
+     font-size: 18px;
+     font-weight: 600;
+     z-index: 1;
+     position: relative;
+}
+ .right-menu a:before {
+     content: "";
+     position: absolute;
+     width: 0%;
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: #fff;
+     transition: all 0.2s ease-in-out 0s;
+     z-index: 1;
+}
+ .right-menu a:hover:before {
+     visibility: visible;
+     width: 100%;
+     z-index: 1;
+}
+ h2 {
+     font-weight: 100;
+     margin: 1em;
+     margin-left: 0;
+     font-size: 2.8em;
+     color: #15e2e0;
+     animation: .5s ease-in-out fadeIn forwards;
+}
+ h3 {
+     font-weight: 400;
+     margin: 0 0 0 2em;
+     animation: .8s ease-in-out fadeIn forwards;
+}
+ h3:after {
+     content: url(./down-chevron.svg);
+     width: .8em;
+     display: inline-block;
+     padding-left: 10px;
+     transition: .5s;
+}
+ .accordion {
+     background-color: #292929;
+     color: #fff;
+     cursor: pointer;
+     padding: 12px;
+     text-align: left;
+     border: none;
+     outline: none;
+     transition: 0.4s;
+}
+ .active, .accordion:hover {
+     color: #15e2e0;
+}
+ .active h3:after {
+     opacity: 0;
+}
+ .panel {
+     padding: 0 18px;
+     color: #fff;
+     display: none;
+     overflow: hidden;
 }
