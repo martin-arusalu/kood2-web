@@ -15,7 +15,6 @@ window.addEventListener("load", function () {
   const offers = [
     'nutikaid äppe',
     'stiilseid veebipoode',
-    'personaalseid tarkvaralahendusi',
     'kodulehtede haldust',
     'pilkupüüdvaid veebilehti'
   ]

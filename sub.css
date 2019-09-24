@@ -151,3 +151,42 @@
      display: none;
      overflow: hidden;
 }
+#logo {
+  height: 1.3em;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .headline {
+    font-size: 80pt;
+  }
+  .headline-subtitle {
+    font-size: 35pt;
+  }
+  #loading-gif {
+    width: 70pt;
+  }
+  .right-menu a {
+    padding: 20pt;
+    font-size: 30pt;
+  }
+  #logo {
+    height: 4em;
+  }
+  .menu-container {
+    padding-top: 2%;
+  }
+  h2 {
+    font-size: 50pt;
+  }
+  h3 {
+    font-size: 38pt;
+    margin: 0 0 0 10pt;
+  }
+  h3:after {
+    padding-left: 15pt;
+  }
+  .kkk p {
+    font-size: 33pt;
+    line-height: 45pt;
+  }
+}
