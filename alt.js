@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
   const s = setInterval(() => {
     document.getElementById('switchable').innerHTML = offers[count % 5];
     count++
-  }, 4000);
+  }, 5000);
 
   const t = setInterval(() => {
     if (counter < letters.length) {
