@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,800,900&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,400,900&display=swap&subset=latin-ext');
  html {
      background-color: #292929;
      transition: background-color 7s;
@@ -123,7 +123,7 @@
      animation: .8s ease-in-out fadeIn forwards;
 }
  h3:after {
-     content: url(./down-chevron.svg);
+     content: url(../assets/down-chevron.svg);
      width: .8em;
      display: inline-block;
      padding-left: 10px;
