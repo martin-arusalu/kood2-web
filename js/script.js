@@ -13,10 +13,10 @@ window.addEventListener("load", function () {
 
   let count = 0;
   const offers = [
-    'nutikaid äppe',
+    'pilkupüüdvaid veebilehti',
     'stiilseid veebipoode',
     'kodulehtede haldust',
-    'pilkupüüdvaid veebilehti'
+    'nutikaid äppe'
   ]
   const s = setInterval(() => {
     document.getElementById('switchable').innerHTML = offers[count % 5];
