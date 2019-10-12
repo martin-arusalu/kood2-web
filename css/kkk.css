@@ -154,6 +154,11 @@
 #logo {
   height: 1.3em;
 }
+.question {
+  margin: 0;
+  padding-left: 2em;
+  color: #9EF9F8;
+}
 
 @media only screen and (max-device-width: 480px) {
   .headline {
