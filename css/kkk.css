@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:200,400,900&display=swap&subset=latin-ext');
  html {
      background-color: #292929;
-     transition: background-color 7s;
 }
  html, body {
      margin: 0;
@@ -162,36 +161,37 @@
 
 @media only screen and (max-device-width: 480px) {
   .headline {
-    font-size: 80pt;
+    font-size: 35pt;
+    margin-top: 70pt;
   }
   .headline-subtitle {
-    font-size: 35pt;
+    font-size: 15pt;
   }
   #loading-gif {
-    width: 70pt;
+    width: 50pt;
   }
   .right-menu a {
-    padding: 20pt;
-    font-size: 30pt;
+    padding: 10pt;
+    font-size: 15pt;
   }
   #logo {
-    height: 4em;
+    height: 2em;
   }
   .menu-container {
     padding-top: 2%;
   }
   h2 {
-    font-size: 50pt;
+    font-size: 20pt;
   }
   h3 {
-    font-size: 38pt;
-    margin: 0 0 0 10pt;
+    font-size: 15pt;
+    margin: 0 0 0 5pt;
   }
   h3:after {
-    padding-left: 15pt;
+    padding-left: 7pt;
   }
   .kkk p {
-    font-size: 33pt;
-    line-height: 45pt;
+    font-size: 13pt;
+    line-height: 20pt;
   }
 }

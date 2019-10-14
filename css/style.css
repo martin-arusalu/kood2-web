@@ -229,20 +229,21 @@
 
 @media only screen and (max-device-width: 480px) {
   .headline {
-    font-size: 70pt;
+    font-size: 35pt;
+    margin-top: 70pt;
   }
   .headline-subtitle {
-    font-size: 35pt;
+    font-size: 15pt;
   }
   #loading-gif {
-    width: 70pt;
+    width: 50pt;
   }
   .right-menu a {
-    padding: 20pt;
-    font-size: 30pt;
+    padding: 10pt;
+    font-size: 15pt;
   }
   #logo {
-    height: 4em;
+    height: 2em;
   }
   .menu-container {
     padding: 5% 5% 0 5%;
