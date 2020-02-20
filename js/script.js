@@ -18,12 +18,12 @@ window.addEventListener("load", function () {
     'kodulehtede haldust',
     'nutikaid äppe'
   ]
-  const s = setInterval(() => {
-    document.getElementById('switchable').innerHTML = offers[count % 5];
+  setInterval(() => {
+    document.getElementById('switchable').innerHTML = offers[count % 4];
     count++
   }, 5000);
 
-  const t = setInterval(() => {
+  setInterval(() => {
     if (counter < letters.length) {
       let searching = true;
       while (searching) {
