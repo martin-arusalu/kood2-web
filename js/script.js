@@ -23,7 +23,7 @@ window.addEventListener("load", function () {
     count++
   }, 5000);
 
-  setInterval(() => {
+  const t =setInterval(() => {
     if (counter < letters.length) {
       let searching = true;
       while (searching) {
